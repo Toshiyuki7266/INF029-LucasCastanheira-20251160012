@@ -2,7 +2,7 @@
 #include<string.h>
 
 //renomeie o arquivo do include abaixo para PrimeiroUltimoNomeMATRICULA.h
-#include "LucasCastanheira20251160012.h"
+#include "trabalho1.h"
 
 void testQ1();
 void testQ2();
@@ -341,5 +341,6 @@ void testQ7()
     printf("%d\n", q7(matrix, stringBusca) == 0);
     strcpy(stringBusca, "DBQMV");
     printf("%d\n", q7(matrix, stringBusca) == 0);
+
 
 }
