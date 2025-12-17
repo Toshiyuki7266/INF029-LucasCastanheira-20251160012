@@ -12,8 +12,6 @@ typedef struct {
 
 Ponto vetorPrincipal[TAM];
 
-/* ===== FUNÇÕES AUXILIARES ===== */
-
 int valida_posicao(int pos) {
     return (pos >= 1 && pos <= TAM);
 }
@@ -51,8 +49,6 @@ void ordena_vetor(int vet[], int tam) {
         vet[j + 1] = aux;
     }
 }
-
-/* ===== FUNÇÕES DO TRABALHO ===== */
 
 int criarEstruturaAuxiliar(int posicao, int tamanho) {
     if (!valida_posicao(posicao))
@@ -217,8 +213,6 @@ int getQuantidadeElementosEstruturaAuxiliar(int posicao) {
     return vetorPrincipal[posicao].qtd;
 }
 
-/* ===== LISTA ENCADEADA ===== */
-
 void Inserir(No *inicio, int valor) {
     No *novo = malloc(sizeof(No));
     novo->conteudo = valor;
@@ -283,3 +277,4 @@ void finalizar() {
         vetorPrincipal[i].tamanho = 0;
     }
 }
+
